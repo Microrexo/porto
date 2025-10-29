@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Portofolio saya - Yehuda Gerhart Pooroe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><Yehuda class="com"></Yehuda></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="#data">Data Portofolio</a></li>
+                <li><a href="Form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="data" class="data-section">
+        <h1>Data Portofolio saya</h1>
+
+        <!-- Charts Section -->
+        <div class="charts-container">
+            <div class="chart-wrapper side">
+                <h2>Proyek per Tahun</h2>
+                <canvas id="yearChart"></canvas>
+            </div>
+            <div class="chart-wrapper center">
+                <h2>Teknologi yang Digunakan</h2>
+                <canvas id="techChart"></canvas>
+            </div>
+            <div class="chart-wrapper side">
+                <h2>Jenis Proyek</h2>
+                <canvas id="yearChart2"></canvas>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="portfolio-table">
+                <thead>
+                    <tr>
+                        <th>Nama Proyek</th>
+                        <th>Tahun Pembuatan</th>
+                        <th>Teknologi yang Digunakan</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td>Website Portofolio</td>
+                        <td>2025</td>
+                        <td>HTML, CSS, JavaScript</td>
+                        <td>Selesai</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>Aplikasi To-Do List</td>
+                        <td>2024</td>
+                        <td>React, Node.js, MongoDB</td>
+                        <td>Selesai</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>Sistem Manajemen Inventori</td>
+                        <td>2023</td>
+                        <td>Python, Django, PostgreSQL</td>
+                        <td>Selesai</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>Website E-Commerce</td>
+                        <td>2022</td>
+                        <td>HTML, CSS, PHP, MySQL</td>
+                        <td>Selesai</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>Aplikasi Chat Real-Time</td>
+                        <td>2021</td>
+                        <td>Socket.io, Express.js, React</td>
+                        <td>Selesai</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Proyek dari Tahun ke Tahun</h2>
+        <div class="table-container">
+            <table class="portfolio-table">
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Jumlah Proyek</th>
+                        <th>Nama Proyek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td>2021</td>
+                        <td>10</td>
+                        <td>Aplikasi Chat Real-Time</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2022</td>
+                        <td>15</td>
+                        <td>Website E-Commerce</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2023</td>
+                        <td>15</td>
+                        <td>Sistem Manajemen Inventori</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2024</td>
+                        <td>16</td>
+                        <td>Aplikasi To-Do List</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2025</td>
+                        <td>16</td>
+                        <td>Website Portofolio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Bayaran Proyek</h2>
+        <div class="table-container">
+            <table class="portfolio-table">
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Nama Proyek</th>
+                        <th>Bayaran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td>2021</td>
+                        <td>Aplikasi Chat Real-Time</td>
+                        <td>Rp 500.000.000</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2022</td>
+                        <td>Website E-Commerce</td>
+                        <td>Rp 1.000.000.000</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2023</td>
+                        <td>Sistem Manajemen Inventori</td>
+                        <td>Rp 5.000.000.000</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2024</td>
+                        <td>Aplikasi To-Do List</td>
+                        <td>Rp 10.000.000.000</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2025</td>
+                        <td>Website Portofolio</td>
+                        <td>Rp 30.000.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yehuda Gerhart Pooroe. All rights reserved.</p>
+        <p><a href="https://itpln.ac.id" target="_blank">Institut Teknologi PLN</a></p>
+    </footer>
+</body>
+</html>

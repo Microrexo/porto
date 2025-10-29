@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Konsultasi Teknologi - Yehuda Gerhart Pooroe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><Yehuda class="com"></Yehuda></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Data.HTML">Data Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact" class="contact-section">
+        <h2>Form Konsultasi Teknologi</h2>
+        <form action="https://formspree.io/f/08226160trygd@gmail.com" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="layanan">Jenis Layanan/Topik</label>
+                <select id="layanan" name="layanan" required>
+                    <option value="">Pilih Layanan</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-app">Mobile App Development</option>
+                    <option value="data-analysis">Data Analysis</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="other">Lainnya</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan/Deskripsi Proyek</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Preferensi Kontak</label>
+                <div class="radio-group">
+                    <label for="email-contact"><input type="radio" id="email-contact" name="kontak" value="email" checked> Email</label>
+                    <label for="phone-contact"><input type="radio" id="phone-contact" name="kontak" value="phone"> Telepon</label>
+                </div>
+                <p style="font-size: 0.9em; color: #666; margin-top: 5px;">Email: 08226160trygd@gmail.com atau dapat menghubungi nomor: 082261606120</p>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Saya ingin menerima tentang teknologi terbaru</label>
+            </div>
+            <button type="submit" class="submit-btn">Kirim Konsultasi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yehuda Gerhart Pooroe. All rights reserved.</p>
+        <p><a href="https://itpln.ac.id" target="_blank">Institut Teknologi PLN</a></p>
+    </footer>
+</body>
+</html>
